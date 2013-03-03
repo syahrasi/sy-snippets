@@ -1,0 +1,45 @@
+extends html, ruby
+
+snippet inuit "MM: Block List"
+<ul class=block-list>
+  <% ${1:5}.times do %>
+  <li><%= lorem.word %>$2</li>
+  <% end %>
+</ul>
+$0
+endsnippet
+
+snippet inuit "MM: Block List, with display:block link"
+<ul class=block-list>
+  <% ${1:5}.times do %>
+  <li><a href=# class=block-list__link>$2</a></li>
+  <% end %>
+</ul>
+$0
+endsnippet
+
+snippet inuit "MM: Media"
+<div class=media>
+  <img src="$1" alt="" class=media__img>
+  <p class=media__body><%= lorem.paragraph %></p>
+</div>
+$0
+endsnippet
+
+snippet inuit "MM: Nav"
+<nav>
+  <ul class="${1:nav nav--banner nav--block}">
+  <% [${2:element}].each do ${3:|${4:index}| }%>
+    <li><a href="<%= $4 %>"><%= $4 %></a></li>
+  <% end %>
+  </ul>
+</nav>
+endsnippet
+
+snippet inuit "MM: Breadcrumb"
+<ol class="nav  breadcrumb">
+<% [${1:element}].each do ${2:|${3:index}| }%>
+  <li><a href=""><%= $3 %></a></li>
+<% end %>
+</ol>
+endsnippet

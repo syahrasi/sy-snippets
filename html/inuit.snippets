@@ -1,0 +1,105 @@
+snippet inuit "Block List" 
+<ul class=block-list>
+  <li>Foo</li>
+  <li>Bar</li>
+  <li>Baz</li>
+  <li><a href=# class=block-list__link>Foo Bar Baz</a></li>
+</ul>
+endsnippet
+
+snippet inuit "Breadcrumb, Simple styling to apply to (ordered) lists" 
+<ol class="nav  breadcrumb">
+  <li><a href=#>Home</a></li>
+  <li><a href=#>About</a></li>
+  <li><a href=#>The Board</a></li>
+  <li class=current><a href=#>Directors</a></li>
+</ol>
+endsnippet 
+
+snippet inuit "Breadcrumb with a path-like structure, GitHub style " 
+<ol class="nav  breadcrumb--path">
+  <li class=breadcrumb__root><a href=#>inuit.css</a></li>
+  <li><a href=#>inuit.css</a></li>
+  <li><a href=#>partials</a></li>
+  <li class=current><a href=#>objects</a></li>
+</ol>
+endsnippet
+
+snippet inuit "Breadcrumb with custom delimiter" 
+<ol class="nav  breadcrumb">
+  <li><a href=#>Home</a></li>
+  <li data-breadcrumb="|"><a href=#>About</a></li>
+  <li data-breadcrumb="|"><a href=#>The Board</a></li>
+  <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+</ol>
+endsnippet
+
+snippet inuit "Button Normal" i 
+<a href=# class="btn">$1</a>$0
+endsnippet
+
+snippet inuit "Button Full" i
+<a href=# class="btn  btn--full">$1</a>$0
+endsnippet
+
+snippet inuit "Media"
+<div class=media>
+  <img src="$1" alt="" class=media__img>
+  <p class=media__body>$2</p>
+</div>
+$0
+endsnippet
+
+snippet inuit "Nav"
+<nav>
+  <ul class=nav>
+    <li><a href=#>Home</a></li>
+    <li><a href=#>About</a></li>
+    <li><a href=#>Portfolio</a></li>
+    <li><a href=#>Contact</a></li>
+  </ul>
+</nav>
+endsnippet
+
+snippet inuit "Pagination"
+<ol class="nav  pagination">
+  <li class=pagination__first>First</li>
+  <li class=pagination__prev>Previous</li>
+  <li><a href=/page/1>1</a></li>
+  <li><a href=/page/2>2</a></li>
+  <li class=current><a href=/page/3>3</a></li>
+  <li><a href=/page/4>4</a></li>
+  <li><a href=/page/5>5</a></li>
+  <li class=pagination__next><a href=/page/next>Next</a></li>
+  <li class=pagination__last><a href=/page/last>Last</a></li>
+</ol>
+endsnippet
+
+snippet inuit "Horizontal Rule"
+<hr class=rule>
+$0
+endsnippet
+
+snippet inuit "Form" b
+<form action=#>
+  <fieldset>
+    <ul class=form-fields>
+      <li>
+        <label for=name>Name</label>
+        <input type=text class=text-input id=name>
+      </li>
+      <li>
+        <label for=email>Email</label>
+        <input type=email class=text-input id=email>
+      </li>
+      <li>
+        <label for=message>Message</label>
+        <textarea></textarea>
+      </li>
+      <li>
+        <button name=button class="btn" id=send>Send</button>
+      </li>
+    </ul>
+  </fieldset>
+</form>
+endsnippet

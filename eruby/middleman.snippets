@@ -1,0 +1,74 @@
+snippet erb "Erb" i
+<%${1:=} $2 %>
+endsnippet
+
+snippet each "Erb friendly each" b
+<% ${1:element}.each do ${2:|${3:index}| }%>
+  $0
+<% end %>
+endsnippet
+
+snippet times "X times do" b
+<% ${1:5}.times do %>
+  $0
+<% end %>
+endsnippet
+
+snippet partial "Partial"
+<%= partial "$1" %>
+$0
+endsnippet
+
+snippet link "Link Helper" i
+<% link_to '$1'${2:, :class => "${3:}"} do %>
+  ${VISUAL}$0
+<% end %>
+endsnippet
+
+snippet image "Image Helper" i
+<%= image_tag '$1'${2:, class => "${3:}"}${4:, alt => "${5:}"}%>
+endsnippet
+
+snippet asset "Asset Helper: CSS" i
+<%= stylesheet_link_tag '$1' %>
+endsnippet
+
+snippet asset "Asset Helper: JS" i
+<%= javascript_include_tag '$1' %>
+endsnippet
+
+snippet asset "Asset Helper: Favicon" i
+<%= favicon_tag '$1' %>
+endsnippet
+
+snippet lorem "Sentence" i
+<%= lorem.sentence %>
+endsnippet
+
+snippet lorem "Word/s" i
+<%= lorem.word${1:s ${2:5}} %>
+endsnippet   
+
+snippet lorem "Paragraph/s" i
+<%= lorem.paragraph${1:s ${2:5}} %>
+endsnippet
+
+snippet lorem "Date" i
+<%= lorem.date %>
+endsnippet
+
+snippet lorem "Name" i
+<%= lorem.name %>
+endsnippet
+
+snippet lorem "First Name" i
+<%= lorem.first_name %>
+endsnippet
+
+snippet lorem "Last Name" i
+<%= lorem.last_name %>
+endsnippet
+
+snippet lorem "Email" i
+<%= lorem.email %>
+endsnippet

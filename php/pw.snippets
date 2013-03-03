@@ -1,0 +1,182 @@
+# $pages
+
+snippet $pages "$pages->find('selector')" i
+$pages->find("${1:selector}")
+endsnippet
+
+snippet $pages "$pages->count('selector')" i
+$pages->count("${1:selector}")
+endsnippet
+
+snippet $pages "$pages->get('selector')" i
+$pages->get("${1:selector}")
+endsnippet
+
+snippet $pages "$pages->get(123)" i
+$pages->get("${1:id}")
+endsnippet
+
+snippet $pages "$pages->get('/path/to/page/')" i
+$pages->get("${1:/path}")
+endsnippet
+
+# $page
+
+snippet $page "$page->id" i
+$page->id
+endsnippet
+
+snippet $page "$page->name" i
+$page->name
+endsnippet
+
+snippet $page "$page->title" i
+$page->title
+endsnippet
+
+snippet $page "$page->path" i
+$page->path
+endsnippet
+
+snippet $page "$page->url" i
+$page->url
+endsnippet
+
+snippet $page "$page->httpUrl" i
+$page->httpUrl
+endsnippet
+
+snippet $page "$page->parent" i
+$page->parent
+endsnippet
+
+snippet $page "$page->parent_id" i
+$page->parent_id
+endsnippet
+
+snippet $page "$page->parents" i
+$page->parents
+endsnippet
+
+snippet $page "$page->rootParent" i
+$page->rootParent
+endsnippet
+
+snippet $page "$page->template" i
+$page->template
+endsnippet
+
+snippet $page "$page->fields" i
+$page->fields
+endsnippet
+
+snippet $page "$page->numChildren" i
+$page->numChildren
+endsnippet
+
+snippet $page "$page->children" i
+$page->children
+endsnippet
+
+snippet $page "$page->child" i
+$page->child
+endsnippet
+
+snippet $page "$page->siblings" i
+$page->siblings
+endsnippet
+
+# $files
+snippet $files "$files->path" i
+${1:$files}->path
+endsnippet
+
+snippet $files "$files->url" i
+${1:$files}->url
+endsnippet
+
+snippet $files "$files->page" i
+${1:$files}->page
+endsnippet
+
+snippet $files "$files->delete($file)" i
+${1:$files}->delete(${2:$file})
+endsnippet
+
+# $file
+snippet $file "$file->url" i
+${1:$file}->url
+endsnippet
+
+snippet $file "$file->filename" i
+${1:$file}->filename
+endsnippet
+
+snippet $file "$file->name" i
+${1:$file}->name
+endsnippet
+
+snippet $file "$file->description" i
+${1:$file}->description
+endsnippet
+
+snippet $file "$file->ext" i
+${1:$file}->ext
+endsnippet
+
+snippet $file "$file->filesize" i
+${1:$file}->filesize
+endsnippet
+
+snippet $file "$file->filesizeStr" i
+${1:$file}->filesizeStr
+endsnippet
+
+snippet $image "$image->width" i
+${1:$image}->width
+endsnippet
+
+snippet $image "$image->height" i
+${1:$image}->height
+endsnippet
+
+snippet $image "$image->size($width, $height, $options)" i
+${1:$image}->size(${2:$width}, ${3:$height}${4:, $options})
+endsnippet
+
+snippet $image "$image->width($width)" i
+${1:$image}->width(${2:$width})
+endsnippet
+
+snippet $image "$image->height($height)" i
+${1:$image}->height(${2:$height})
+endsnippet
+
+# $config
+snippet $config "$config->ajax" i
+$config->ajax
+endsnippet
+
+snippet $config "$config->httpHost" i
+$config->httpHost
+endsnippet
+
+snippet $config "$config->https" i
+$config->https
+endsnippet
+
+snippet $config "$config->urls->root" i
+$config->urls->root
+endsnippet
+
+snippet $config "$config->urls->templates" i
+$config->urls->templates
+endsnippet
+
+snippet $config "$config->path->root" i
+$config->path->root
+endsnippet
+
+snippet $config "$config->path->templates" i
+$config->path->templates
+endsnippet

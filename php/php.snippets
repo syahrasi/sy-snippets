@@ -1,0 +1,28 @@
+snippet php "PHP block" b
+<?php
+  $0
+?>
+endsnippet
+
+snippet phpe "Start Embedded PHP" i
+<?php ${1:echo }$2; ?>
+endsnippet
+
+snippet phpc "Embedded PHP Closing Bracket" b
+<?php } ?>
+endsnippet
+
+snippet eif "Embedded PHP if" b
+<?php if (${1:/* condition */}) { ?>
+$0
+endsnippet
+
+snippet efore "Embedded Foreach" b
+<?php foreach ($${1:variable} as $${3:value}){ ?>
+$0
+endsnippet
+
+snippet efor "Embedded for" b
+<?php for ($${2:i} = 0; $$2 < ${1:count}; $$2${3:++}) { ?>
+endsnippet
+
